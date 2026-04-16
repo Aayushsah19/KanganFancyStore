@@ -203,60 +203,43 @@
             .hero-text h1 { font-size: 4rem; }
             #cart-drawer { width: 100%; }
         }
+         
+        /* --- SABSE NICHE STYLE TAG KE ANDAR DALO --- */
 
-        /* --- AKHRI MOBILE RESPONSIVE FIX --- */
-        @media screen and (max-width: 768px) {
-    * {
-        box-sizing: border-box;
-    }
-    
+@media screen and (max-width: 768px) {
+    /* 1. Body ko lock karo */
     body {
-        overflow-x: hidden !important; /* Side mein screen nikalna band */
-        width: 100vw !important;
+        overflow-x: hidden !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
 
-    /* Hero Section aur Text */
+    /* 2. Heading choti karo */
     h1 {
-        font-size: 22px !important;
-        padding: 0 15px !important;
+        font-size: 20px !important;
         text-align: center !important;
     }
 
-    /* 3D Kangan Canvas Fix */
+    /* 3. 3D Kangan Canvas ko fix karo */
     canvas {
         width: 100% !important;
         height: 300px !important;
-        display: block !important;
-        margin: 0 auto !important;
     }
 
-    /* Products Grid (Items ko ek ke niche ek dikhao) */
-    .product-grid, .items-container, .features {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
+    /* 4. Products ko ek ke niche ek dikhao */
+    .product-grid, .items-container {
+        display: block !important;
         width: 100% !important;
-        padding: 10px !important;
     }
 
-    .product-card, .item-box {
-        width: 92% !important;
-        margin: 15px auto !important;
-        float: none !important; /* Purana design clear karne ke liye */
-    }
-
-    /* Images aur Buttons */
-    img {
-        max-width: 100% !important;
-        height: auto !important;
-    }
-
-    .btn, button {
+    .product-card {
         width: 90% !important;
+        margin: 20px auto !important;
         display: block !important;
-        margin: 10px auto !important;
-        padding: 15px !important;
-    } 
+    }
+} /* <--- YE BRACKET LAGANA MAT BHOOLNA BHAI! */
+        
 
     </style>
 </head>
