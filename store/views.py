@@ -8,7 +8,7 @@ def home(request):
             'id': i,
             'name': f'Fancy Kangan Design #{i}',
             'price': 1000 + (i * 150),  # Har item ka price thoda alag dikhega
-            'image': f'item{i}.jpg'     # Ye aapki photo ka naam dhoondega
+            'image': f'item{i}.jpeg'     # Ye aapki photo ka naam dhoondega
         }
         products.append(item)
     

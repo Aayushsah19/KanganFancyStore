@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kangan Fancy Store | Ultra-Luxe Jewelry & Bespoke Crafts</title>
     
@@ -202,6 +203,61 @@
             .hero-text h1 { font-size: 4rem; }
             #cart-drawer { width: 100%; }
         }
+
+        /* --- AKHRI MOBILE RESPONSIVE FIX --- */
+        @media screen and (max-width: 768px) {
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        overflow-x: hidden !important; /* Side mein screen nikalna band */
+        width: 100vw !important;
+    }
+
+    /* Hero Section aur Text */
+    h1 {
+        font-size: 22px !important;
+        padding: 0 15px !important;
+        text-align: center !important;
+    }
+
+    /* 3D Kangan Canvas Fix */
+    canvas {
+        width: 100% !important;
+        height: 300px !important;
+        display: block !important;
+        margin: 0 auto !important;
+    }
+
+    /* Products Grid (Items ko ek ke niche ek dikhao) */
+    .product-grid, .items-container, .features {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+        padding: 10px !important;
+    }
+
+    .product-card, .item-box {
+        width: 92% !important;
+        margin: 15px auto !important;
+        float: none !important; /* Purana design clear karne ke liye */
+    }
+
+    /* Images aur Buttons */
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    .btn, button {
+        width: 90% !important;
+        display: block !important;
+        margin: 10px auto !important;
+        padding: 15px !important;
+    } 
+
     </style>
 </head>
 <body>
