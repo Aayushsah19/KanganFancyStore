@@ -203,7 +203,7 @@
             .hero-text h1 { font-size: 4rem; }
             #cart-drawer { width: 100%; }
         }
-        
+
         /* --- COMPLETE MOBILE FIX --- */
 @media screen and (max-width: 768px) {
     /* 1. Side se screen nikalna band */
@@ -289,7 +289,7 @@
     <section id="hero">
         <canvas id="webgl-canvas"></canvas>
         <div class="hero-text">
-            <span>Kathmandu • Since 1995</span>
+            <span>Siraha • Since 2006</span>
             <h1>Radiance of <br> Traditional Art</h1>
             <p>Step into a world of curated luxury. Nepal's most exquisite collection of fancy bangles, bridal sets, and timeless gold-plated crafts.</p>
             <button class="btn-main" onclick="gsap.to(window, {scrollTo: '#shop', duration: 1})">Shop the Collection</button>
@@ -393,7 +393,7 @@
         <div class="footer-grid">
             <div>
                 <div class="brand footer-logo">Kangan Fancy Store</div>
-                <p style="color:#666; font-size:0.9rem;">The leading luxury jeweler in the Himalayas. For over 25 years, we have provided unparalleled craftsmanship and genuine gemstones to the elite of Nepal.</p>
+                <p style="color:#666; font-size:0.9rem;">The leading luxury jeweler in the Himalayas. For over 20 years, we have provided unparalleled craftsmanship and genuine gemstones to the elite of Nepal.</p>
                 <div style="display:flex; gap:20px; margin-top:30px;">
                     <i class="fab fa-instagram fa-lg"></i>
                     <i class="fab fa-facebook-f fa-lg"></i>
@@ -429,34 +429,34 @@
             </div>
         </div>
         <div class="bottom-bar">
-            <span>© 2026 Kangan Fancy Store. Designed by Luxe Digital.</span>
-            <span>Kathmandu • Lalitpur • Pokhara</span>
+            <span>© 2026 Kangan Fancy Store. Designed by Aayush .</span>
+            <span>Siraha • </span>
         </div>
     </footer>
 
     <script>
         // --- 1. PRODUCT DATABASE (20 ITEMS) ---
         const PRODUCTS = [
-            { id: 1, name: "Regal Gold Kangan Set", cat: "Bangles", price: 85000, img: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?q=80&w=600" },
-            { id: 2, name: "Emerald Royale Choker", cat: "Necklaces", price: 125000, img: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?q=80&w=600" },
-            { id: 3, name: "Pearl Droplet Earrings", cat: "Earrings", price: 12000, img: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?q=80&w=600" },
-            { id: 4, name: "Deep Blue Sapphire Ring", cat: "Rings", price: 45000, img: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?q=80&w=600" },
-            { id: 5, name: "Antique Wedding Bangles", cat: "Bangles", price: 210000, img: "https://images.unsplash.com/photo-1602751584412-718b4e18375a?q=80&w=600" },
-            { id: 6, name: "Matte Gold Kangan", cat: "Bangles", price: 65000, img: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?q=80&w=600" },
-            { id: 7, name: "Ruby Studded Jhumkas", cat: "Earrings", price: 28500, img: "https://images.unsplash.com/photo-1635767793021-95207c1ae584?q=80&w=600" },
-            { id: 8, name: "Diamond Vow Band", cat: "Rings", price: 32000, img: "https://images.unsplash.com/photo-1589128777073-263566ae5e4d?q=80&w=600" },
-            { id: 9, name: "Temple Style Bangles", cat: "Bangles", price: 42000, img: "https://images.unsplash.com/photo-1619119069152-a2b331eb392a?q=80&w=600" },
-            { id: 10, name: "Bridal Rani Haar", cat: "Necklaces", price: 350000, img: "https://images.unsplash.com/photo-1511253819057-5408d3d81f88?q=80&w=600" },
-            { id: 11, name: "Statement Hoop Gold", cat: "Earrings", price: 15500, img: "https://images.unsplash.com/photo-1630030532634-21761d71848e?q=80&w=600" },
-            { id: 12, name: "Classic Solitaire Ring", price: 89000, cat: "Rings", img: "https://images.unsplash.com/photo-1544957992-20514f595d6f?q=80&w=600" },
-            { id: 13, name: "Solid Velvet Bangles", cat: "Bangles", price: 4500, img: "https://images.unsplash.com/photo-1611085583191-a3b1a308c1f1?q=80&w=600" },
-            { id: 14, name: "Lotus Petal Necklace", cat: "Necklaces", price: 78000, img: "https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?q=80&w=600" },
-            { id: 15, name: "Moonlight Silver Studs", cat: "Earrings", price: 9500, img: "https://images.unsplash.com/photo-1616110410499-1317075c3d00?q=80&w=600" },
-            { id: 16, name: "Vintage Rose Ring", cat: "Rings", price: 27000, img: "https://images.unsplash.com/photo-1603961314754-811bd5817279?q=80&w=600" },
-            { id: 17, name: "Gold Plated Bridal Set", cat: "Necklaces", price: 45000, img: "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?q=80&w=600" },
-            { id: 18, name: "Filigree Design Bangle", cat: "Bangles", price: 12500, img: "https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?q=80&w=600" },
-            { id: 19, name: "Ethereal Pearl Drops", cat: "Earrings", price: 18000, img: "https://images.unsplash.com/photo-1588444837495-c6cfcb53b82c?q=80&w=600" },
-            { id: 20, name: "Princess Cut Garnet", cat: "Rings", price: 54000, img: "https://images.unsplash.com/photo-1598560917505-59a3ad559071?q=80&w=600" }
+            { id: 1, name: "Regal Gold Kangan Set", cat: "Bangles", price: 8500, img: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?q=80&w=600" },
+            { id: 2, name: "Emerald Royale Choker", cat: "Necklaces", price: 1250, img: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?q=80&w=600" },
+            { id: 3, name: "Pearl Droplet Earrings", cat: "Earrings", price: 1200, img: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?q=80&w=600" },
+            { id: 4, name: "Deep Blue Sapphire Ring", cat: "Rings", price: 500, img: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?q=80&w=600" },
+            { id: 5, name: "Antique Wedding Bangles", cat: "Bangles", price: 2100, img: "https://images.unsplash.com/photo-1602751584412-718b4e18375a?q=80&w=600" },
+            { id: 6, name: "Matte Gold Kangan", cat: "Bangles", price: 6500, img: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?q=80&w=600" },
+            { id: 7, name: "Ruby Studded Jhumkas", cat: "Earrings", price: 2500, img: "https://images.unsplash.com/photo-1635767793021-95207c1ae584?q=80&w=600" },
+            { id: 8, name: "Diamond Vow Band", cat: "Rings", price: 3000, img: "https://images.unsplash.com/photo-1589128777073-263566ae5e4d?q=80&w=600" },
+            { id: 9, name: "Temple Style Bangles", cat: "Bangles", price: 400, img: "https://images.unsplash.com/photo-1619119069152-a2b331eb392a?q=80&w=600" },
+            { id: 10, name: "Bridal Rani Haar", cat: "Necklaces", price: 3500, img: "https://images.unsplash.com/photo-1511253819057-5408d3d81f88?q=80&w=600" },
+            { id: 11, name: "Statement Hoop Gold", cat: "Earrings", price: 1500, img: "https://images.unsplash.com/photo-1630030532634-21761d71848e?q=80&w=600" },
+            { id: 12, name: "Classic Solitaire Ring", price: 800, cat: "Rings", img: "https://images.unsplash.com/photo-1544957992-20514f595d6f?q=80&w=600" },
+            { id: 13, name: "Solid Velvet Bangles", cat: "Bangles", price: 400, img: "https://images.unsplash.com/photo-1611085583191-a3b1a308c1f1?q=80&w=600" },
+            { id: 14, name: "Lotus Petal Necklace", cat: "Necklaces", price: 700, img: "https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?q=80&w=600" },
+            { id: 15, name: "Moonlight Silver Studs", cat: "Earrings", price: 990, img: "https://images.unsplash.com/photo-1616110410499-1317075c3d00?q=80&w=600" },
+            { id: 16, name: "Vintage Rose Ring", cat: "Rings", price: 2700, img: "https://images.unsplash.com/photo-1603961314754-811bd5817279?q=80&w=600" },
+            { id: 17, name: "Gold Plated Bridal Set", cat: "Necklaces", price: 4500, img: "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?q=80&w=600" },
+            { id: 18, name: "Filigree Design Bangle", cat: "Bangles", price: 1200, img: "https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?q=80&w=600" },
+            { id: 19, name: "Ethereal Pearl Drops", cat: "Earrings", price: 1800, img: "https://images.unsplash.com/photo-1588444837495-c6cfcb53b82c?q=80&w=600" },
+            { id: 20, name: "Princess Cut Garnet", cat: "Rings", price: 5400, img: "https://images.unsplash.com/photo-1598560917505-59a3ad559071?q=80&w=600" }
         ];
 
         // --- 2. APP STATE ---
@@ -664,7 +664,7 @@
             
             showNotice("Connecting to eSewa API...");
             setTimeout(() => {
-                alert(`Order Placed Successfully! Thank you ${name}.`);
+                alert(`Order Placed Successfully! Thank you 🙏 ${name}.`);
                 cart = [];
                 updateCartUI();
                 closeModal();
@@ -696,5 +696,28 @@
             }
         }
     </script>
+
+    <section id="contact-info" style="padding: 40px 20px; text-align: center; background: #1a1a1a; color: white;">
+    <h2 style="color: #ff00ff; margin-bottom: 20px;">Contact Us</h2>
+    
+    <div style="margin-bottom: 15px;">
+        <p style="font-size: 18px;">
+            <strong>📞 Phone:</strong> 
+            <a href="tel:+9779815708999" style="color: white; text-decoration: none;"> +977 9815708999</a>
+            <a href="tel:+9779766359871" style="color: white; text-decoration: none;"> +977 9766359871</a>
+        </p>
+    </div>
+
+    <div style="margin-bottom: 15px;">
+        <p style="font-size: 18px;">
+            <strong>✉️ Email:</strong> 
+            <a href="mailto:info@kanganstore.com" style="color: white; text-decoration: none;"> info@kanganstore.com</a>
+        </p>
+    </div>
+
+    <p style="font-size: 14px; color: #888;">📍 Siraha Bazar, Nepal</p>
+</section>
+
+
 </body>
 </html>
