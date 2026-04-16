@@ -203,44 +203,62 @@
             .hero-text h1 { font-size: 4rem; }
             #cart-drawer { width: 100%; }
         }
-         
-        /* --- SABSE NICHE STYLE TAG KE ANDAR DALO --- */
-
+        
+        /* --- COMPLETE MOBILE FIX --- */
 @media screen and (max-width: 768px) {
-    /* 1. Body ko lock karo */
-    body {
+    /* 1. Side se screen nikalna band */
+    body, html {
         overflow-x: hidden !important;
         width: 100% !important;
-        margin: 0 !important;
-        padding: 0 !important;
+        position: relative;
     }
 
-    /* 2. Heading choti karo */
-    h1 {
-        font-size: 20px !important;
+    /* 2. Menu (Navigation) Fix */
+    nav, .navbar, .menu-links {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 10px !important;
+        padding: 10px 0 !important;
+    }
+
+    .nav-item, a {
+        font-size: 12px !important; /* Mobile par font chota */
+    }
+
+    /* 3. Logo/Title Fix */
+    .brand-name, h1 {
+        font-size: 24px !important;
+        text-align: center !important;
+        width: 100% !important;
+    }
+
+    /* 4. Hero Section aur Text Fix */
+    .hero-content {
+        padding: 20px !important;
         text-align: center !important;
     }
 
-    /* 3. 3D Kangan Canvas ko fix karo */
-    canvas {
-        width: 100% !important;
-        height: 300px !important;
+    .hero-text {
+        font-size: 16px !important;
+        line-height: 1.5 !important;
     }
 
-    /* 4. Products ko ek ke niche ek dikhao */
-    .product-grid, .items-container {
-        display: block !important;
-        width: 100% !important;
-    }
-
-    .product-card {
-        width: 90% !important;
-        margin: 20px auto !important;
+    /* 5. Buttons ko bada aur center karo */
+    .shop-btn, .btn {
+        width: 80% !important;
+        margin: 10px auto !important;
         display: block !important;
     }
-} /* <--- YE BRACKET LAGANA MAT BHOOLNA BHAI! */
-        
 
+    /* 6. Product Category (Bangles, Rings) Fix */
+    .category-filter {
+        display: flex !important;
+        overflow-x: auto !important; /* Mobile par ungli se slide karne ke liye */
+        white-space: nowrap !important;
+        padding: 10px !important;
+    }
+}
     </style>
 </head>
 <body>
